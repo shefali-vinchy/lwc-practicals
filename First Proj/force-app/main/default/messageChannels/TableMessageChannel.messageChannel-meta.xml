@@ -1,0 +1,11 @@
+<lightningmessagechannel  xmlns="http://soap.sforce.com/2006/04/metadata">
+   <masterLabel>TableMessageChannel</masterLabel>
+   <isExposed>true</isExposed>
+   <description>This Lightning Message Channel sends information from Data Filler to Table</description>
+
+   <lightningMessageFields>
+       <fieldName>passData</fieldName>
+       <description>Name To Send</description>
+   </lightningMessageFields>
+
+</lightningmessagechannel >

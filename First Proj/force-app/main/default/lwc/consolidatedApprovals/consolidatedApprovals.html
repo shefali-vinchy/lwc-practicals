@@ -1,0 +1,31 @@
+<template>
+    <lightning-tabset variant="scoped">
+        <lightning-tab label="Accounts Approvals">
+           <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={accountApprovals}
+                columns={accountColumns}>
+        </lightning-datatable>
+    </div>
+        </lightning-tab>
+        <lightning-tab label="Opportunity Approvals" title="2nd tab extended title">
+           <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={opportunityApprovals}
+                columns={oppColumns}>
+        </lightning-datatable>
+    </div>
+        </lightning-tab>
+        <lightning-tab label="Case Approvals">
+            <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={caseApprovals}
+                columns={caseColumns}>
+        </lightning-datatable>
+    </div>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Modal Wrapper Demo">
+        <div class="slds-p-around_medium">
+            <lightning-button variant="brand" label="Open" onclick={openHandler}></lightning-button>
+        </div>
+    </lightning-card>
+    <template if:true={isOpen}>
+         <c-modal onclose={closeHandler}>
+            <h1 slot="title" >Modal Header</h1>
+            <p>This is the content para blablabla</p>
+            <div slot="footer" >
+                <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={closeHandler}>Cancel</button>
+                 <button class="slds-button slds-button_brand">Save</button>    
+            </div>
+         </c-modal>
+    </template>
+   
+</template>

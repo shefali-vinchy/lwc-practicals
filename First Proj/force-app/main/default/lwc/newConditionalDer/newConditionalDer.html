@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="New If else Demo">
+        <div class="slds-var-p-around_medium">
+            <lightning-select
+                value={selectVal}
+                label="Select an input"
+                options={inputOptions}
+                onchange={handleChange}
+            ></lightning-select>
+        </div>
+        <div>
+            <c-show-input-comp input={selectVal}></c-show-input-comp>
+        </div>
+    </lightning-card>
+</template>
