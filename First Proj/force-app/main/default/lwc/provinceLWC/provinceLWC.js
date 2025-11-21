@@ -17,6 +17,7 @@ export default class ProvinceLWC extends LightningElement {
     totalPages = 0;
     paginatedData = [];
     
+    
     isoChangeHandler(event){
         this.isoValue = event.target.value;
     }
