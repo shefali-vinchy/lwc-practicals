@@ -1,0 +1,16 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base" title="Tree Grid">
+        <lightning-input type="search" onchange={handleKeyChange}
+                class="slds-show slds-is-relative slds-var-m-bottom_small" label="Search">
+        </lightning-input>        
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-tree-grid
+                columns={gridColumns}
+                data={gridData}
+                key-field="Name"
+                hide-checkbox-column
+            ></lightning-tree-grid>
+        </div>
+    </lightning-card>
+    
+</template>
